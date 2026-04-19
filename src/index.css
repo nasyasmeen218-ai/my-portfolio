@@ -654,3 +654,22 @@ input[type="range"].vol::-webkit-slider-thumb {
 .content-area::-webkit-scrollbar-thumb:hover {
   background: #888;
 }
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column; 
+    padding: 10px;
+  }
+
+  .sidebar {
+    display: none; 
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr; 
+  }
+
+  h1 {
+    font-size: 24px; 
+  }
+}
