@@ -673,3 +673,34 @@ input[type="range"].vol::-webkit-slider-thumb {
     font-size: 24px; 
   }
 }
+
+.main-app-container {
+  min-height: 100vh;
+  overflow-y: auto; 
+  padding-bottom: 100px; 
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #000;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  
+  /* הקטנת הטקסט של הפרויקטים שייכנסו ברוחב המסך */
+  .project-row {
+    font-size: 14px;
+    padding: 10px 5px;
+  }
+  
+  .stack-tags {
+    display: none; 
+  }
+}
