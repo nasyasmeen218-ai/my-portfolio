@@ -704,3 +704,27 @@ input[type="range"].vol::-webkit-slider-thumb {
     display: none; 
   }
 }
+
+@media (max-width: 768px) {
+  .main-container { 
+    flex-direction: column !important; 
+  }
+
+  .sidebar {
+    width: 100% !important; 
+    height: auto !important;
+    padding: 10px;
+    flex-direction: row !important; 
+    justify-content: space-around;
+    position: relative;
+  }
+
+  .content {
+    width: 100% !important;
+    padding: 20px;
+  }
+
+  body, html {
+    overflow-x: hidden !important; 
+  }
+}
